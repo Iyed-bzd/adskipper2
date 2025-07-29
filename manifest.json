@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Ad Skipper & Muter",
+    "version": "1.0",
+    "description": "Automatically mutes and skips ads on YouTube.",
+    "icons": {
+      "16": "99e92ab2-3aa9-4f6c-963e-5ff0b6c11c69.png"
+   
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ]
+  }
